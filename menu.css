@@ -1,0 +1,63 @@
+
+/*
+	LES TEACHERS DU NET
+	Created by Honoré Hounwanou
+	@ www.youtube.com/hounwanou1993
+	@ www.facebook.com/honore.hounwanou
+	All rights reserved
+	* Date: September 06, 2013
+*------------------------------------------------------------------------------------------------*/
+
+
+/* STYLE GLOBAL ************************************************************************************/
+body{background-color: #012;}
+
+
+/* Stylisation de chaque élément de menu ************************************************************************************/
+nav .box{
+	display: inline-block;
+	width: 20%;
+	float: left;
+	font: bold 20px Tahoma;
+	text-align: center;
+	height: 250px;
+	overflow: hidden;
+	transition: width 1s;
+}
+
+
+/* Liens de navigation ************************************************************************************/
+.box a{
+	display: block;
+	vertical-align: middle;
+	height: 100%;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	padding-top: 20px;
+}
+
+
+/* On cache les "span" par défaut  ************************************************************************************/
+.box span{
+	display: block;
+	position: relative;
+	top: 100%;
+	text-align: center;
+	transition: top 1s;
+}
+
+#accueil {background-color: red;}
+#a_propos {background-color: gray;}
+#services {background-color: green;}
+#portfolio {background-color: pink;}
+#contact {background-color: blue;}
+
+
+/* On affiche le "span" correspondant à l'élément de menu survolé :) ************************************************************************************/
+nav:hover .box{width: 10%;} /* Tous les autres box sont à 10% */
+nav .box:hover{width: 60%;} /* La box survolée prend 60%  ==> ce qui fait au total 100%. Pour les matheux 10*4 = 40% t 40% + 60% = 100% */ 
+nav .box:hover span {top: 25%;} /* On affiche gentillement notre fameux span */
+
+
+/* END OF STYLIZATION :) ****************************************************************************/
